@@ -39,7 +39,9 @@ Get the current maximum value in the FACILITYID field
 max_id = max([int(row[0]) for row in arcpy.da.SearchCursor(feature_class, "FACILITYID") if row[0] is not None and row[0].isdigit()])
 
 Print the result
-print('Current Max ID') print(max_id) ```
+print('Current Max ID') print(max_id) 
+```
+
 
 ## License
 
